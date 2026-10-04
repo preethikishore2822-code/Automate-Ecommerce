@@ -57,16 +57,17 @@ jobs:
 
       - name: Copy report to gh-page folder
         if: always()
-       run: |
-        mkdir -p public
-        cp reports.html public/index.html
-        cp -R screenshots public/screenshots
-        ls -l public
+        run: |
+         mkdir -p public
+         cp reports.html public/index.html
+         cp -R screenshots public/screenshots
+         ls -l public
+    
 
       - name: Deploy to GitHub Pages
-       if: always()
-       uses: JamesIves/github-pages-deploy-action@v4
-       with:
+        if: always()
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
           folder: public
           token: ${{ secrets.PAT }}
           branch: gh-pages
