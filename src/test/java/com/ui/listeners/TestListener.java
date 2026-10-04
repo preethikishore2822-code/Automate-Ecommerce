@@ -10,7 +10,6 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.Status;
 import com.ui.driver.DriverManager;
 import com.ui.tests.BaseTest;
-import com.utility.BrowserUtility;
 import com.utility.ExtentReportUtility;
 import com.utility.LoggerUtility;
 import com.utility.ScreenshotUtility;
