@@ -28,8 +28,13 @@ public class BaseTest {
 		// create driver creates a new browser specific session
 
 		logger.info("Starting test");
+logger.info("Starting test");
 
-		DriverManager.createDriver(Browser.valueOf(browser.toUpperCase()), isHeadless);
+System.out.println("browser = [" + browser + "]");
+System.out.println("isHeadless = [" + isHeadless + "]");
+
+DriverManager.createDriver(Browser.valueOf(browser.toUpperCase()), isHeadless);
+
 
 		driver = DriverManager.getDriver();
 

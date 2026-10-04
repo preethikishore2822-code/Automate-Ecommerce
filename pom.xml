@@ -17,8 +17,8 @@
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>
-						<browser>{browser}</browser>
-						<isHeadless>{isHeadless}</isHeadless>
+						<browser>${browser}</browser>
+						<isHeadless>${isHeadless}</isHeadless>
 
 					</systemPropertyVariables>
 				</configuration>
